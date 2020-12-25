@@ -1,13 +1,13 @@
-import React , {Component} from "react";
+import React, {Component} from "react";
 
 const TableHead = () => {
   return (
     <thead>
-      <th>Должность</th>
-      <th>Фамилия</th>
-      <th>Имя</th>
-      <th>Отчество</th>
-      <th>Телефон</th>
+    <th>Должность</th>
+    <th>Фамилия</th>
+    <th>Имя</th>
+    <th>Отчество</th>
+    <th>Телефон</th>
     </thead>
   )
 };
@@ -26,12 +26,12 @@ const TableBody = (props) => {
       )
     }
   );
-  return  <tbody>{rows}</tbody>
+  return <tbody>{rows}</tbody>
 };
 
 
-class Table extends Component{
-  render(){
+class Table extends Component {
+  render() {
     const {characterData} = this.props;
     return (
       <table className="table table-striped">

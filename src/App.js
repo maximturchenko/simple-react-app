@@ -5,11 +5,13 @@ import Table from "./Table";
 // Компонент для выводы подписчиков
 import Followers from "./Followers";
 
+import Board from "./Board";
+
 // Наследуемся на основе компонента React
 class App extends Component {
   // Объект state
   state = {
-    // массив объектов
+    // Массив объектов
     followers: [
       {
         name: 'Олег',
@@ -92,6 +94,7 @@ class App extends Component {
     return <div className="container">
       <Table characterData={characters}/>
       <Followers followers={followers} removeFollower={this.removeFollower}/>
+      <Board />
     </div>
   }
 }
